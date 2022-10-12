@@ -49,5 +49,10 @@ namespace API.Middleware
               await context.Response.WriteAsync(json);
             }
         }
+
+        public Task InvokeAsync(HttpContext context, RequestDelegate next)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
